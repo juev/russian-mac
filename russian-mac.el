@@ -1,28 +1,10 @@
 ;;; cyrillic.el --- Quail package for inputting Cyrillic characters
 
-;; Copyright (C) 1997-1998, 2001-2018 Free Software Foundation, Inc.
-;; Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-;;   2006, 2007, 2008, 2009, 2010, 2011
-;;   National Institute of Advanced Industrial Science and Technology (AIST)
-;;   Registration Number H14PRO021
+;; Copyright (C) 1997-1998, 2001-2019 Free Software Foundation, Inc.
+;; Copyright (C) 2019
 
-;; Author: TAKAHASHI Naoto <ntakahas@m17n.org>
+;; Author: Denis Evsyukov <denis@evsyukov.org>
 ;; Keywords: multilingual, input method, Cyrillic, i18n
-
-;; This file is part of GNU Emacs.
-
-;; GNU Emacs is free software: you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
-
-;; GNU Emacs is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
@@ -38,15 +20,14 @@
 
 (require 'quail)
 
-;; See comment above.  This is the variant `winkeys' from `ru' in XKB.
 (quail-define-package
  "russian-mac" "Russian" "RU" nil
  "ЙЦУКЕН Russian mac layout"
  nil t t t t nil nil nil nil nil t)
 
-;;  1! 2" 3№ 4% 5: 6, 7. 8; 9( 0) -_ =+ \/ ёЁ
+;;  1! 2" 3№ 4% 5: 6, 7. 8; 9( 0) -_ =+ \/
 ;;   Й  Ц  У  К  Е  Н  Г  Ш  Щ  З  Х  Ъ
-;;    Ф  Ы  В  А  П  Р  О  Л  Д  Ж  Э
+;;    Ф  Ы  В  А  П  Р  О  Л  Д  Ж  Э ёЁ
 ;;     Я  Ч  С  М  И  Т  Ь  Б  Ю  /?
 
 (quail-define-rules
@@ -87,7 +68,7 @@
  ("l" ?д)
  (";" ?ж)
  ("'" ?э)
- ("\\" ?\\)
+ ("\\" ?ё)
  ("z" ?я)
  ("x" ?ч)
  ("c" ?с)
