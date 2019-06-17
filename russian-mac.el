@@ -32,6 +32,8 @@
 ;; encoding shouldn't matter too much provided it supports the
 ;; necessary characters.
 
+;; TODO fix `\ and § keys
+
 ;;; Code:
 
 (require 'quail)
