@@ -144,6 +144,8 @@
  (">" ?Ю)
  ("?" ?/))
 
+(provide 'russian-mac)
+
 ;; Local Variables:
 ;; coding: utf-8
 ;; End:
