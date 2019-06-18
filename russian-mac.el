@@ -1,6 +1,5 @@
-;;; cyrillic.el --- Quail package for inputting Cyrillic characters
+;;; russian-mac.el --- Quail package for inputting Cyrillic characters
 
-;; Copyright (C) 1997-1998, 2001-2019 Free Software Foundation, Inc.
 ;; Copyright (C) 2019
 
 ;; Author: Denis Evsyukov <denis@evsyukov.org>
@@ -13,8 +12,6 @@
 ;; what's appropriate for aa buffer's file coding system, so the
 ;; encoding shouldn't matter too much provided it supports the
 ;; necessary characters.
-
-;; TODO fix `\ and § keys
 
 ;;; Code:
 
@@ -135,4 +132,4 @@
 ;; coding: utf-8
 ;; End:
 
-;;; cyrillic.el ends here
+;;; russian-mac.el ends here
